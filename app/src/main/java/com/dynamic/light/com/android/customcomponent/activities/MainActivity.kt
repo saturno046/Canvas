@@ -13,7 +13,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        addOnboarding()
+        //addOnboarding()
+
+        buttonNext.setOnClickListener {
+            quadro.next()
+        }
     }
 
     private fun addOnboarding() {
